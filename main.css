@@ -67,61 +67,6 @@ body {
   opacity: 1;
 }
 
-/*----------BURGER----------*/
-
-.burger {
-  display: none;
-  float: right;
-  margin-top: 10px;
-}
-
-.burger a {
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 50px;
-}
-
-.burger {
-  display: none;
-  padding: 9px 2px;
-  background: none;
-  border: 0;
-  cursor: pointer;
-}
-
-.burger__item {
-  display: block;
-  width: 28px;
-  height: 3px;
-  background-color: #fff;
-  font-size: 0;
-  color: transparent;
-  position: relative;
-}
-
-.burger__item:before,
-.burger__item:after {
-  content: "";
-  height: 100%;
-  background-color: #fff;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-}
-
-.burger__item:before {
-  width: 30px;
-  top: -8px;
-}
-
-.burger__item:after {
-  width: 26px;
-  bottom: -8px;
-}
-
 /* ----------ASYM---------- */
 
 #asym {
@@ -833,8 +778,646 @@ body {
   }
 }
 
-@media (max-width: 250px) {
+@media (min-width: 768px) {
+
+  #trends-content {
+    margin: 0px;
+    margin-top: 70px;
+    font-size: 10px;
+    max-width: 300px;
+    padding: 0px 10px 20px 10px;
+    margin-left: 50px;
+    float: none;
+  }
+
+  #header {
+    height: 600px;
+    min-width: 768px;
+  }
+
+  .trends-div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #trends {
+    margin: 10px 0px 20px 80px;
+    padding: 0;
+    font-size: 40px;
+    float: none;
+    overflow: none;
+    flex-wrap: none;
+  }
+
   .nav {
-    margin: 0 0 0 100px;
+    margin: 0px 0px 10px 250px;
+    padding: 5px 0 0 0;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  #asym {
+    min-width: 768px;
+    height: 650px;
+  }
+
+  #asym-zagolovok {
+    color: #000000;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 60px;
+    float: right;
+    padding: 0px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin: 300px 100px 0px 0px;
+  }
+
+  #asym-all-content {
+    min-width: 320px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  #asym-content-1 {
+    margin: 0px;
+    font-size: 10px;
+    width: 320px;
+    padding: 5px 5px 5px 5px;
+    border-right: none;
+  }
+
+  #asym-content-2 {
+    margin: 0px;
+    font-size: 10px;
+    width: 315px;
+    padding: 5px 5px 5px 5px;
+    border-right: none;
+  }
+
+  #asym-content-3 {
+    margin: 0px;
+    font-size: 10px;
+    width: 315px;
+    padding: 5px 5px 5px 5px;
+    border-right: none;
+  }
+
+  #asym-content-4 {
+    margin: 0px;
+    font-size: 10px;
+    width: 315px;
+    padding: 5px 5px 5px 5px;
+    border-right: none;
+  }
+
+  #asym-content-5 {
+    margin: 0px;
+    font-size: 10px;
+    width: 315px;
+    padding: 5px 5px 5px 5px;
+    border-right: none;
+  }
+
+  #asym-content-1-2 {
+    width: 315px;
+    border-right: none;
+  }
+
+  #asym-content-3-4-5 {
+    margin: 0px;
+    width: 315px;
+    border-right: none;
+    padding: 0px 0px 0px 0px;
+  }
+
+  #dark-theme {
+   height: 650px;
+   min-width: 768px;
+  }
+
+  #dark-theme-all-content {
+    margin: 0px 0px 0px 0px;
+  }
+
+  #dark-theme-zagolovok {
+    font-size: 40px;
+    width: 768px;
+    text-align: center;
+    font-weight: 800;
+    font-family: Arial;
+    letter-spacing: 10px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .dark-theme-content-1 {
+    font-size: 10px;
+    width: 200px;
+    padding: 30px 10px 40px;
+    margin: 20px 0px 0px 330px;
+  }
+
+  .dark-theme-content-2 {
+    font-size: 10px;
+    width: 200px;
+    margin: 20px 150px 0px 100px;
+    padding: 30px 10px 40px;
+  }
+
+  .dark-theme-content-3 {
+    font-size: 10px;
+    width: 200px;
+    margin: 20px 0px 0px 330px;
+    padding: 30px 10px 40px;
+  }
+
+  #author {
+    min-width: 320px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #trends-content {
+    margin: 0px;
+    margin-top: 70px;
+    font-size: 10px;
+    max-width: 300px;
+    padding: 0px 20px 30px 20px;
+    margin-left: 150px;
+    float: none;
+  }
+
+  #header {
+    height: 600px;
+    min-width: 1024px;
+  }
+
+  .trends-div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #trends {
+    margin: 10px 0px 20px 120px;
+    padding: 0;
+    font-size: 50px;
+    float: none;
+    overflow: none;
+    flex-wrap: none;
+  }
+
+  .nav {
+    margin: 0px 0px 10px 350px;
+    padding: 5px 0 0 0;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  #asym {
+    min-width: 1024px;
+    height: 700px;
+  }
+
+  #asym-zagolovok {
+    color: #000000;
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 60px;
+    float: right;
+    padding: 0px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin: 300px 100px 0px 0px;
+  }
+
+  #asym-all-content {
+    min-width: 320px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  #asym-content-1 {
+    margin: 0px;
+    font-size: 10px;
+    width: 320px;
+    padding: 10px 20px 5px 10px;
+    border-right: none;
+  }
+
+  #asym-content-2 {
+    margin: 0px;
+    font-size: 10px;
+    width: 315px;
+    padding: 10px 50px 5px 10px;
+    border-right: none;
+  }
+
+  #asym-content-3 {
+    margin: 0px;
+    font-size: 10px;
+    width: 315px;
+    padding: 10px 5px 5px 10px;
+    border-right: none;
+  }
+
+  #asym-content-4 {
+    margin: 0px;
+    font-size: 10px;
+    width: 315px;
+    padding: 10px 30px 5px 10px;
+    border-right: none;
+  }
+
+  #asym-content-5 {
+    margin: 0px;
+    font-size: 10px;
+    width: 315px;
+    padding: 10px 5px 5px 10px;
+    border-right: none;
+  }
+
+  #asym-content-1-2 {
+    width: 315px;
+    border-right: none;
+  }
+
+  #asym-content-3-4-5 {
+    margin: 0px;
+    width: 315px;
+    border-right: none;
+    padding: 0px 0px 0px 0px;
+  }
+
+  #dark-theme {
+   height: 650px;
+   min-width: 1024px;
+  }
+
+  #dark-theme-all-content {
+    margin: 100px 0px 0px 0px;
+  }
+
+  #dark-theme-zagolovok {
+    font-size: 60px;
+    width: 1024px;
+    text-align: center;
+    font-weight: 800;
+    font-family: Arial;
+    letter-spacing: 10px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .dark-theme-content-1 {
+    font-size: 11px;
+    width: 200px;
+    padding: 50px 10px 80px;
+    margin: 0px 0px 0px 50px;
+  }
+
+  .dark-theme-content-2 {
+    font-size: 11px;
+    width: 200px;
+    margin: 20px 100px 0px 100px;
+    padding: 50px 10px 80px;
+  }
+
+  .dark-theme-content-3 {
+    font-size: 11px;
+    width: 200px;
+    margin: 20px 0px 0px 0px;
+    padding: 50px 10px 80px;
+  }
+
+  #author {
+    min-width: 320px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1300px) {
+
+  #trends-content {
+    margin: 0px;
+    margin-top: 70px;
+    font-size: 12px;
+    max-width: 400px;
+    padding: 10px 15px 40px 15px;
+    margin-left: 200px;
+    float: none;
+    line-height: 30px;
+  }
+
+  #header {
+    height: 800px;
+    min-width: 1300px;
+  }
+
+  .trends-div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #trends {
+    margin: 50px 0px 20px 120px;
+    padding: 0;
+    font-size: 90px;
+    float: none;
+    overflow: none;
+    flex-wrap: none;
+  }
+
+  .nav {
+    margin: 0px 0px 10px 500px;
+    padding: 5px 0 0 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #asym {
+    min-width: 1300px;
+    height: 750px;
+  }
+
+  #asym-zagolovok {
+    color: #000000;
+    font-family: Arial;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 80px;
+    float: right;
+    padding: 0px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin: 300px 100px 0px 0px;
+  }
+
+  #asym-all-content {
+    min-width: 320px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  #asym-content-1 {
+    margin: 0px;
+    font-size: 13px;
+    width: 500px;
+    padding: 20px 20px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-2 {
+    margin: 0px;
+    font-size: 13px;
+    width: 500px;
+    padding: 20px 50px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-3 {
+    margin: 0px;
+    font-size: 13px;
+    width: 400px;
+    padding: 20px 5px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-4 {
+    margin: 0px;
+    font-size: 13px;
+    width: 500px;
+    padding: 20px 30px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-5 {
+    margin: 0px;
+    font-size: 13px;
+    width: 400px;
+    padding: 20px 5px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-3-4-5 {
+    margin: 0px;
+    width: 430px;
+    border-right: none;
+    padding: 0px 0px 0px 0px;
+  }
+
+  #dark-theme {
+   height: 650px;
+   min-width: 1300px;
+  }
+
+  #dark-theme-all-content {
+    margin: 100px 0px 0px 0px;
+  }
+
+  #dark-theme-zagolovok {
+    font-size: 80px;
+    width: 1300px;
+    text-align: center;
+    font-weight: 800;
+    font-family: Arial;
+    letter-spacing: 10px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .dark-theme-content-1 {
+    font-size: 16px;
+    width: 300px;
+    padding: 50px 10px 90px;
+    margin: 0px 0px 0px 80px;
+  }
+
+  .dark-theme-content-2 {
+    font-size: 16px;
+    width: 300px;
+    margin: 20px 100px 90px 100px;
+    padding: 50px 10px 80px;
+  }
+
+  .dark-theme-content-3 {
+    font-size: 16px;
+    width: 300px;
+    padding: 50px 10px 90px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #author {
+    min-width: 320px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  #trends-content {
+    margin: 0px;
+    margin-top: 130px;
+    font-size: 12px;
+    max-width: 400px;
+    padding: 20px 15px 40px 15px;
+    margin-left: 250px;
+    float: none;
+    line-height: 30px;
+  }
+
+  #header {
+    height: 800px;
+    min-width: 1440px;
+  }
+
+  .trends-div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #trends {
+    margin: 100px 0px 20px 120px;
+    padding: 0;
+    font-size: 90px;
+    float: none;
+    overflow: none;
+    flex-wrap: none;
+  }
+
+  .nav {
+    margin: 0px 0px 10px 570px;
+    padding: 5px 0 0 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #asym {
+    min-width: 1440px;
+    height: 800px;
+  }
+
+  #asym-zagolovok {
+    color: #000000;
+    font-family: Arial;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 80px;
+    float: right;
+    padding: 0px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin: 300px 100px 0px 0px;
+  }
+
+  #asym-all-content {
+    min-width: 320px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  #asym-content-1 {
+    margin: 0px;
+    font-size: 14px;
+    width: 500px;
+    padding: 20px 40px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-2 {
+    margin: 0px;
+    font-size: 14px;
+    width: 500px;
+    padding: 20px 100px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-3 {
+    margin: 0px;
+    font-size: 14px;
+    width: 400px;
+    padding: 20px 5px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-4 {
+    margin: 0px;
+    font-size: 14px;
+    width: 500px;
+    padding: 20px 30px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-5 {
+    margin: 0px;
+    font-size: 14px;
+    width: 400px;
+    padding: 20px 5px 20px 10px;
+    border-right: none;
+  }
+
+  #asym-content-3-4-5 {
+    margin: 0px;
+    width: 430px;
+    border-right: none;
+    padding: 0px 0px 0px 0px;
+  }
+
+  #dark-theme {
+   height: 750px;
+   min-width: 1440px;
+  }
+
+  #dark-theme-all-content {
+    margin: 150px 0px 0px 0px;
+  }
+
+  #dark-theme-zagolovok {
+    font-size: 80px;
+    width: 1440px;
+    text-align: center;
+    font-weight: 800;
+    font-family: Arial;
+    letter-spacing: 10px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .dark-theme-content-1 {
+    font-size: 16px;
+    width: 300px;
+    padding: 50px 10px 90px;
+    margin: 0px 0px 0px 150px;
+  }
+
+  .dark-theme-content-2 {
+    font-size: 16px;
+    width: 300px;
+    margin: 20px 100px 90px 100px;
+    padding: 50px 10px 80px;
+  }
+
+  .dark-theme-content-3 {
+    font-size: 16px;
+    width: 300px;
+    padding: 50px 10px 90px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #author {
+    min-width: 320px;
+    height: 600px;
   }
 }
